@@ -1,10 +1,10 @@
-function sumOfPurchases(purchaseAmounts) {
-    let totalSum = 0;
-    purchaseAmounts.forEach(amount => {
-        totalSum += amount;
+function pp(u) {
+    let x = 0;
+    u.forEach(i => {
+      x += i;
     });
-    return totalSum;
+    return x;
   }
   
-  let topPurchases = [10000, 20000, 30000];
-  console.log(sumOfPurchases(topPurchases));
+  let aa = [10000, 20000, 30000];
+  console.log(pp(aa));
