@@ -29,4 +29,13 @@ console.log(logger.getLogs());
 // Каждое время, когда возвращенная функция вызывается, она должна генерировать случайное число в пределах от min до max.
 // Значения min и max должны сохраняться внутри замыкания, и быть недоступными извне.
 
+function createRandomGenerator(min, max){
+    return function() {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    };
+}
+
+const randomGenerator = createRandomGenerator(1, 10);
+console.log(randomGenerator());
+
 
